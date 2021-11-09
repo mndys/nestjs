@@ -8,7 +8,7 @@ export class DatabaseModule {
       module: DatabaseModule,
       providers: [
         {
-          provide: 'CONNECTION',
+          provide: 'CONNECTION', // 👈
           useValue: createConnection(options),
         },
       ],
